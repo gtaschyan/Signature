@@ -124,6 +124,15 @@ offices.forEach(function(element, key){
     select[key] = new Option(element.name, element.key)
 })
 
+function formatPhoneNumber(phoneNumberString) {
+    var cleaned = ('' + phoneNumberString).replace(/\D/g, '');
+    var match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/);
+    if (match) {
+      return '(' + match[1] + ') ' + match[2] + '-' + match[3];
+    }
+    return null;
+  }
+
 function handleSubmit(e){
     e.preventDefault();
     const newEmployee = {
@@ -136,7 +145,7 @@ function handleSubmit(e){
     EmployeeName.innerHTML = newEmployee.name
     EmployeePosition.innerHTML = newEmployee.position
     if (newEmployee.cell != ""){
-    EmployeeCell.innerHTML = `Cell: ${newEmployee.cell}`}
+    EmployeeCell.innerHTML = `Cell: ${formatPhoneNumber(newEmployee.cell)}`}
     EmployeeEmail.innerHTML = newEmployee.email
     
     document.querySelector('#EMPLOYEE-EMAIL').href = `mailto:${newEmployee.email}`
