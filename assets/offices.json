@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Calabasas",
+        "address": "23901 Calabasas Rd Suite #1085",
+        "city":"Calabasas",
+        "state": "CA",
+        "zipcode": "91302",
+        "phone":"(818)348-1100",
+        "fax":"(818)348-4949"
+    },
+    {
+        "name": "Bakersfield",
+        "address": "1430 Truxtun Avenue, #725",
+        "city":"Bakersfield",
+        "state": "CA",
+        "zipcode": "93301",
+        "phone":"(661)393-9700",
+        "fax":"(661)393-9702"
+    },
+    {
+        "name": "Fresno",
+        "address": "7413 N. Cedar Ave. #102",
+        "city":"Fresno",
+        "state": "CA",
+        "zipcode": "93720",
+        "phone":"(818)348-1100",
+        "fax":"(818)348-4949"
+    }
+]
