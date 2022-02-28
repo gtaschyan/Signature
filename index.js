@@ -120,6 +120,15 @@ const offices = [
     },
 ]
 
+function officeFormatter(key){
+    OfficeAddress.innerHTML = `
+    ${offices[0].address}<br/>
+    ${offices[0].city},${offices[0].state} ${offices[0].zipcode}
+    `;
+    OfficeNumber.innerHTML = `Tel: ${offices[0].phone}`
+    OfficeFax.innerHTML =`Fax: ${offices[0].fax}`
+}
+
 offices.forEach(function(element, key){
     select[key] = new Option(element.name, element.key)
 })
@@ -207,22 +216,6 @@ function handleSubmit(e){
             OfficeNumber.innerHTML = `Tel: ${offices[6].phone}`
             OfficeFax.innerHTML =`Fax: ${offices[6].fax}`
             break;
-        // case "Sacramento/Woodland":
-        //     OfficeAddress.innerHTML = `
-        //     ${offices[7].address}<br/>
-        //     ${offices[7].city},${offices[7].state} ${offices[7].zipcode}
-        //     `;
-        //     OfficeNumber.innerHTML = `Tel: ${offices[7].phone}`
-        //     OfficeFax.innerHTML =`Fax: ${offices[7].fax}`
-        //     break;
-        // case "Sacramento/Woodland":
-        //     OfficeAddress.innerHTML = `
-        //     ${offices[6].address}<br/>
-        //     ${offices[6].city},${offices[6].state} ${offices[6].zipcode}
-        //     `;
-        //     OfficeNumber.innerHTML = `Tel: ${offices[6].phone}`
-        //     OfficeFax.innerHTML =`Fax: ${offices[6].fax}`
-        //     break;
         case "Valencia/Santa Clarita":
             OfficeAddress.innerHTML = `
             ${offices[7].address}<br/>
@@ -266,7 +259,6 @@ function handleSubmit(e){
         default:
         OfficeAddress.innerHTML ="No Valid Location"
     }
-//need to do the switch to get by ID not by branch name
 }
 
 form.addEventListener('submit', handleSubmit)
