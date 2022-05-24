@@ -90,8 +90,8 @@ const offices = [
         "city":"Fresno",
         "state": "CA",
         "zipcode": "93720",
-        "phone":"(818)348-1100",
-        "fax":"(818)348-4949"
+        "phone":"(818) 348-1100",
+        "fax":"(818) 348-4949"
     },    
     {
         "name": "Maryland",
@@ -118,6 +118,13 @@ const offices = [
         "state": "TX",
         "zipcode": "76065"
     },
+    {
+        "name": "Modesto/Turlock",
+        "address": "935 W 18th St.",
+        "city":"Merced",
+        "state": "CA",
+        "zipcode": "95340"
+    }
 ]
 
 function officeFormatter(key){
@@ -253,8 +260,18 @@ function handleSubmit(e){
             ${offices[11].address}<br/>
             ${offices[11].city},${offices[11].state} ${offices[11].zipcode}
             `;
-            OfficeNumber.innerHTML = `Tel: ${offices[11].phone}`
-            OfficeFax.innerHTML =`Fax: ${offices[11].fax}`
+            OfficeNumber.innerHTML = ``;
+            OfficeFax.innerHTML =``;
+            document.querySelector('#INFO-SEPERATOR').style.display = "none";
+            break;
+        case "Modesto/Turlock":
+            OfficeAddress.innerHTML = `
+            ${offices[12].address}<br/>
+            ${offices[12].city},${offices[12].state} ${offices[12].zipcode}
+            `;
+            document.querySelector('#INFO-SEPERATOR').style.display = "none";
+            OfficeNumber.innerHTML = ``;
+            OfficeFax.innerHTML =``;
             break;
         default:
         OfficeAddress.innerHTML ="No Valid Location"
