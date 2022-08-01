@@ -124,6 +124,13 @@ const offices = [
         "city":"Merced",
         "state": "CA",
         "zipcode": "95340"
+    },
+    {
+        "name": "Kansas",
+        "address": "6021 SW 29th St.",
+        "city":"Topeka",
+        "state": "CA",
+        "zipcode": "66614"
     }
 ]
 
