@@ -282,8 +282,8 @@ function handleSubmit(e){
             break;
         case "Kansas":
             OfficeAddress.innerHTML = `
-            ${offices[12].address}<br/>
-            ${offices[12].city},${offices[12].state} ${offices[12].zipcode}
+            ${offices[13].address}<br/>
+            ${offices[13].city},${offices[13].state} ${offices[13].zipcode}
             `;
             document.querySelector('#INFO-SEPERATOR').style.display = "none";
             OfficeNumber.innerHTML = ``;
