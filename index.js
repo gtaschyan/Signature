@@ -129,7 +129,7 @@ const offices = [
         "name": "Kansas",
         "address": "6021 SW 29th St.",
         "city":"Topeka",
-        "state": "CA",
+        "state": "KS",
         "zipcode": "66614"
     }
 ]
