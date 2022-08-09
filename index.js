@@ -280,6 +280,15 @@ function handleSubmit(e){
             OfficeNumber.innerHTML = ``;
             OfficeFax.innerHTML =``;
             break;
+        case "Kansas":
+            OfficeAddress.innerHTML = `
+            ${offices[12].address}<br/>
+            ${offices[12].city},${offices[12].state} ${offices[12].zipcode}
+            `;
+            document.querySelector('#INFO-SEPERATOR').style.display = "none";
+            OfficeNumber.innerHTML = ``;
+            OfficeFax.innerHTML =``;
+            break;
         default:
         OfficeAddress.innerHTML ="No Valid Location"
     }
