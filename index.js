@@ -127,7 +127,7 @@ const offices = [
     },
     {
         "name": "Kansas",
-        "address": "6021 SW 29th St.",
+        "address": "6021 SW 29th St. Ste A #311",
         "city":"Topeka",
         "state": "KS",
         "zipcode": "66614"
